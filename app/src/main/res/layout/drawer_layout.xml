@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/menu_llProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/dimen_5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15dp">
+
+            <com.leaugematchschedule.customview.CircleImageView
+                android:id="@+id/menu_ivProfile"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher_foreground"/>
+
+            <TextView
+                android:id="@+id/menu_tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_16sp"
+                tools:text="Steve"/>
+
+            <TextView
+                android:id="@+id/menu_tvSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_16sp"
+                tools:text="Morelli"/>
+
+            <TextView
+                android:id="@+id/menu_tvUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_12sp"
+                tools:text="Steveydogg@gmail.com"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/menu_tvHome"
+                    style="@style/StyleTvMenu"/>
+
+                <View
+                    style="@style/StyleHorizontalView"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"/>
+
+                <TextView
+                    android:id="@+id/menu_tvInbox"
+                    style="@style/StyleTvMenu"/>
+
+                <View
+                    style="@style/StyleHorizontalView"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"/>
+
+                <TextView
+                    android:id="@+id/menu_tvSettings"
+                    style="@style/StyleTvMenu"
+                    android:text="@string/settings"/>
+
+                <View
+                    style="@style/StyleHorizontalView"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"/>
+
+                <TextView
+                    android:id="@+id/menu_tvLiveChat"
+                    style="@style/StyleTvMenu"/>
+
+                <View
+                    style="@style/StyleHorizontalView"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"/>
+
+                <TextView
+                    android:id="@+id/menu_tvSignOut"
+                    style="@style/StyleTvMenu"/>
+
+                <View
+                    style="@style/StyleHorizontalView"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/menu_tvVersion"
+            style="@style/StyleTvMenu"
+            android:gravity="center"/>
+    </LinearLayout>
+</layout>

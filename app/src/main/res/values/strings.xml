@@ -1,4 +1,35 @@
 <resources>
     <string name="app_name">LeagueMatchSchedule</string>
     <string name="action_settings">Settings</string>
+
+    <!--Common Strings-->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="settings">Settings</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="close">Close</string>
+
+    <string name="click_here_to_refresh">Click here to refresh</string>
+    <string name="search_message">What are you looking for?</string>
+
+    <!-- All types of messages which are shown to the User.-->
+    <!--Common Alert Msg-->
+    <string name="alert_message_error">Something went wrong please try after sometime.</string>
+    <string name="alert_network_error">Network error! Try after sometime.</string>
+    <string name="alert_some_error">Something went wrong, try again</string>
+    <string name="alert_no_connection">No internet connection</string>
+    <string name="alert_check_gps">Geolocation is OFF</string>
+    <string name="alert_no_data_message">No data available to show.</string>
+    <string name="alert_to_exit">Press BACK again to exit.</string>
+    <string name="alert_logout">Sure you want to logout?</string>
+    <string name="alert_do_sign_in_title">Sign in Required!</string>
+    <string name="alert_do_sign_in_msg">To access, do sign in.</string>
+
 </resources>

@@ -1,14 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
-        google()
         jcenter()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-        
+        classpath 'com.google.gms:google-services:3.1.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -17,10 +17,30 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
         jcenter()
+        google()
+        maven {
+            url 'https://maven.google.com'
+        }
     }
 }
+
+ext {
+    isRelease = false
+
+    buildTools = "26.0.2"
+
+    minSdk = 21
+    compileSdk = 26
+    targetSdk = 27
+
+    supportLibrary = '27.0.2'
+    googlePlayServices = '11.8.0'
+    sdp = "1.0.5" //String
+    okhttp3 = '3.9.1'
+    retrofit2 = '2.3.0'
+}
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir
